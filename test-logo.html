@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>test</title>
+  
+  <script src="js/mootools-core-1.4.1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/mootools-more-1.4.0.1.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js/LogoIJmerika.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    var templateDir = ".";
+    window.addEvent('domready', function() { 
+      for (var i = 0; i < 20; i++){
+        document.id('main').grab(new LogoIJmerika().preset02());
+      }
+    });
+  </script>
+  
+  <style type="text/css" media="screen">
+    body { background: #eee; }
+    canvas { display: block; margin: 20px; }
+  </style>
+  
+</head>
+
+<body>
+
+<div id="main"></div>
+
+</body>
+</html>
