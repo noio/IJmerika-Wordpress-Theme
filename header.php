@@ -13,7 +13,8 @@
   <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
   <meta name="verify-v1" content="55sFCNkxLoZ43+bkSomM9ntR+bmUrp9BhC4YjX4rG0k=" /><!-- google verification -->
 
-    <?php $t_dir = get_bloginfo('template_directory');?>  
+  <?php $t_dir = get_bloginfo('template_directory');?>  
+  
   <link rel="SHORTCUT ICON" href="<?php echo $t_dir;?>/favicon.ico"/>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
@@ -21,14 +22,15 @@
     
   <script src="<?php echo $t_dir;?>/js/mootools-core-1.4.1.js" type="text/javascript" charset="utf-8"></script>
   <script src="<?php echo $t_dir;?>/js/mootools-more-1.4.0.1.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/LogoIJmerika.js" type="text/javascript" charset="utf-8"></script>
+  <script src="<?php echo $t_dir;?>/js/LogoIJmerika.js" type="text/javascript" charset="utf-8"></script>
   
     
   <?php wp_head(); ?>
   
   <script type="text/javascript" charset="utf-8">
+    var templateDir = "<?php echo $t_dir;?>";
     window.addEvent('domready', function(){
-      document.id('logo').grab(new IJmerikaLogo().preset02());
+      document.id('logo').grab(new LogoIJmerika().preset02());
     });
   </script>
   

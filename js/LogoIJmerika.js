@@ -34,6 +34,9 @@ var LogoIJmerika = new Class({
     
     Implements: Options,
     
+    // These are all the settings for drawing the logo. waves is a list of objects,
+    // one for each wave that is drawn.
+    // Use a preset??() function to randomize these options and draw the logo.
     options: {
         width: 284,
         height: 75,
@@ -106,7 +109,7 @@ var LogoIJmerika = new Class({
         this.bg.onload = function(){
             this.redraw();
         }.bind(this);
-        this.bg.src = "logo_bg_"+this.options.width+"x"+this.options.height+".png";
+        this.bg.src = templateDir+"/images/logo_bg_"+this.options.width+"x"+this.options.height+".png";
         return this;
     },
     
