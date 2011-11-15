@@ -1,0 +1,62 @@
+/*  
+Theme Name: IJmerika
+Theme URI: http://www.ijmerika.nl/
+Description: IJmerika Wordpress theme
+Version: 0.2
+Author: Thomas van den Berg, Tom Aizenberg
+Author URI: http://www.ijmerika.nl/
+*/
+
+/*  RESET */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}caption, th, td {text-align:left;font-weight:normal;}table {border-collapse:separate;border-spacing:0;}blockquote:before,blockquote:after,q:before,q:after {content: "";}blockquote, q {quotes: "" "";}
+* {margin:0;padding:0;}
+
+/* Clearing floats without extra markup */
+.clearfix:after,.container:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix,.container{display:block;}
+.clear{clear:both;}
+
+/* TYPOGRAPHY & COLORS */
+html { height: 100%;}
+body { 
+  font-size: 87.5%; /*14px*/
+  color: #555; 
+  background: #282828;
+  font-family: "Lucida Grande",Lucida,Verdana,sans-serif;
+  word-spacing: 0.1em;
+  line-height: 1.5; /*21px*/
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; font-style: italic; color: #7a7a7a; font-family: Georgia;}
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+p { margin:0 0 1.5em;}
+
+a { color: #589EBA; text-decoration: none;}
+a:hover{ color: #71CAEE !important;}
+
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+/* ELEMENTS */
+.favicon  { display: block; float: left; height: 16px; margin: 0px 4px 0px 0px; position: relative; top: 3px; width: 16px; }
+
+
+
+/* Comments */
+#comments               { width: 700px; margin: 0 10px; float: left; }
+  .dsq-brlink           { display: none; }
+  #dsq-content .dsq-options { display: none; }
+  #dsq-content .dsq-item-trackback {width: 100%; font-family: 'Inconsolata','Monaco','Courier', _mono ;}
+  #dsq-content .dsq-item-trackback input { width: 500px; font-family: 'Inconsolata','Monaco','Courier', _mono ; 
+                          background: #555555; color: #cccccc; border: 1px solid #111;}
+  #dsq-content #dsq-references li { margin: 0 0 10px; padding: 10px; border-left: 4px solid #111;}
